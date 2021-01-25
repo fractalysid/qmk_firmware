@@ -41,17 +41,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
  * | TAB    |   A  |   S  |  D   |   F  |   G  |                              |   H  |   J  |   K  |   L  | ;  : |  ' "   |
  * |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
- * | LCTL   |   Z  |   X  |   C  |   V  |   B  |      |      |  |      |      |   N  |   M  | ,  < | . >  | /  ? |  - _   |
- * `----------------------+------+------+------+      |      |  |      |      +------+------+------+----------------------'
- *                        | GUI  | Alt  |      |      |      |  | Bspc | Space|      | Tab  | AltGr|
- *                        |      |      | Lower| Shift| Enter|  | Shift| Nav  | Raise|      |      |
+ * | LCTL   |   Z  |   X  |   C  |   V  |   B  |      |  Del |  | Bspc | Lead |   N  |   M  | ,  < | . >  | /  ? |  - _   |
+ * `----------------------+------+------+------+------+------|  |------+------+------+------+------+----------------------'
+ *                        | GUI  | Alt  |      |      |      |  |      | Space|      | Tab  | AltGr|
+ *                        |      |      | Lower| Enter| Shift|  | Shift| Nav  | Raise|      |      |
  *                        `----------------------------------'  `----------------------------------'
  */
     [QWERTY] = LAYOUT(
-      KC_ESC,  KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,                                         KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_PIPE,
+      KC_ESC,  KC_Q,   KC_W,   KC_E,   KC_R,   KC_T,                                         KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSLASH,
       KC_TAB, KC_A,   KC_S,   KC_D,   KC_F,   KC_G,                                         KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
-      KC_LCTL, KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   XXXXXXX,   XXXXXXX, XXXXXXX, KC_LEAD,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_MINS,
-              KC_LGUI, KC_LALT, MO(LOWER), KC_LSFT,  KC_ENT,  MT(MOD_RSFT, KC_BSPC), LT(NAV, KC_SPC), MO(RAISE), KC_TAB, KC_RALT
+      KC_LCTL, KC_Z,   KC_X,   KC_C,   KC_V,   KC_B,   XXXXXXX,   KC_DEL, KC_BSPC, KC_LEAD,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_MINS,
+              KC_LGUI, KC_LALT, MO(LOWER), KC_ENT, KC_LSFT,  KC_RSFT, LT(NAV, KC_SPC),  MO(RAISE), KC_TAB, KC_RALT
     ),
 /*
  * General Gaming Layer
