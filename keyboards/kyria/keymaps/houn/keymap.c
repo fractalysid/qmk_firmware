@@ -61,7 +61,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|                              |------+------+------+------+------+--------|
  * |  LSFT  |   Q  |   A  |   W  |   D  |   F  |                              |      |      |      |      |      |        |
  * |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
- * |   F1   |   Z  |   X  |   S  |   C  |   G  |      |      |  |      |      |      |      |      |      |      |        |
+ * |   Tab  |   Z  |   X  |   S  |   C  |   G  |      |      |  |      |      |      |      |      |      |      |        |
  * `----------------------+------+------+------+------+------|  |------+------+------+------+------+----------------------'
  *                        |      |      | LCTL | Space|  R   |  |      |      |      |      |      |
  *                        |      |      |      |      |      |  |      |      |      |      |      |
@@ -70,7 +70,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [GAMING] = LAYOUT(
       KC_ESC,  KC_1,    KC_2,    KC_3,    KC_E,    KC_R,                                        _______, _______, _______, _______, _______, _______,
       KC_LSFT, KC_Q,    KC_A,    KC_W,    KC_D,    KC_F,                                        _______, _______, _______, _______, _______, _______,
-      KC_F1,   KC_Z,    KC_X,    KC_S,    KC_C,    KC_G,    XXXXXXX, XXXXXXX, _______, _______, _______, _______, _______, _______, _______, _______,
+      KC_TAB,   KC_Z,    KC_X,    KC_S,    KC_C,    KC_G,    XXXXXXX, XXXXXXX, _______, _______, _______, _______, _______, _______, _______, _______,
                                  XXXXXXX, XXXXXXX, KC_LCTL, KC_SPC,  KC_R,    _______, _______, _______, _______, _______
     ),
 /*
@@ -608,7 +608,7 @@ static void render_status(void) {
     oled_write_P(IS_LED_ON(led_usb_state, USB_LED_SCROLL_LOCK) ? PSTR("SCRLCK ") : PSTR("       "), false);
     
     // Luna
-    //animate_luna();
+    animate_luna();
 }
   
 void oled_task_user(void) {
