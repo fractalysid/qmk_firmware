@@ -75,7 +75,7 @@
       "LCTL(KC_TAB)",
       "MO(3)",
       "KC_NO",
-      "KC_NO",
+      "TO(0)",
       "KC_NO"
     ],
     [
@@ -111,7 +111,7 @@
       "LSFT(KC_SLSH)",
       "KC_NO",
       "KC_NO",
-      "KC_NO",
+      "TO(0)",
       "MO(3)"
     ],
     [
@@ -147,7 +147,7 @@
       "KC_F12",
       "KC_NO",
       "KC_NO",
-      "KC_NO",
+      "TO(0)",
       "KC_NO"
     ],
     [
@@ -183,7 +183,7 @@
       "KC_NO",
       "KC_NO",
       "KC_NO",
-      "KC_NO",
+      "TO(0)",
       "KC_NO"
     ],
     [
@@ -255,7 +255,7 @@
       "KC_NO",
       "KC_NO",
       "TO(0)",
-      "KC_NO",
+      "TO(0)",
       "KC_NO"
     ]
   ],
